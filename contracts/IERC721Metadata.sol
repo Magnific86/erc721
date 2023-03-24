@@ -9,5 +9,5 @@ interface IERC721Metadata is IERC721 {
     function symbol() external view returns (string calldata);
 
     // https:// + tokenId or ipfs:// + tokenId
-    function tokenURI(uint tokenId) external view returns (string calldata);
+    function _baseURI() external pure returns (string memory);
 }
